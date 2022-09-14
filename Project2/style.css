@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+/*can be made responsive with grid*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: darkgray;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 20px auto;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sameLine {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.title {
+  margin-right: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+input, select {
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+input[type="submit"]{
+    width:fit-content;
+    color: white;
+    background-color: red;
+    margin-left: auto;
+}
+
+input[type="file"]{
+    width:100%;
+}

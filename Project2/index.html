@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Job Application</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="sameLine">
+        <h1 class="title">Job Application</h1>
+        <h3>(Web)</h3>
+      </div>
+      <form action="#">
+        <div class="row">
+          <div class="field">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" />
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="field">
+            <label for="jobRole">Job Role</label>
+            <select name="jobRole" id="jobRole">
+              <option value="">Select Job Role</option>
+              <option value="uiDesigner">UI Designer</option>
+              <option value="frontend">Frontend developer</option>
+              <option value="backend">Backend developer</option>
+              <option value="mobile">Mobile developer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="address">Address</label>
+          <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" />
+          </div>
+
+          <div class="field">
+            <label for="pinCode">Pin Code</label>
+            <input type="number" name="pinCode" id="pinCode" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="startDate">Start Date</label>
+            <input type="date" name="startDate" id="startDate" />
+          </div>
+
+          <div class="field">
+            <label for="cv">Upload Your CV</label>
+            <input type="file" name="cv" id="cv" />
+          </div>
+
+          <!-- <label for="cv" class="field custom-file-upload">
+            Upload Your CV
+            <input type="file" name="cv" id="cv" />
+          </label> -->
+        </div>
+        <input type="submit" value="Apply Now">
+      </form>
+    </main>
+  </body>
+</html>
